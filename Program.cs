@@ -35,10 +35,6 @@ class Program
                         Console.WriteLine("---------------------");
                     }
                 }
-                else if (getResponse.weight == 0)
-                {
-                    Console.WriteLine("Not currently a Pokemon. Maybe in a few generations time it will be though...");
-                }
                 else
                 {
                     Console.WriteLine($"Name: {getResponse.name}");
