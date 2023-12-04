@@ -22,7 +22,7 @@ class Program
                 var responseContent = response.Content.ReadAsStringAsync().Result;
                 var getResponse = JsonSerializer.Deserialize<GetResponse>(responseContent);
 
-                if (enteredName.Length == 0)
+                if (string.IsNullOrEmpty(enteredName))
                 {
                     Console.WriteLine("No pokemon name or id entered. Take a look at some below:");
                     Console.WriteLine(getResponse.count);
