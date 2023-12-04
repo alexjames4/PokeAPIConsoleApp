@@ -25,7 +25,6 @@ class Program
                 if (string.IsNullOrEmpty(enteredName))
                 {
                     Console.WriteLine("No pokemon name or id entered. Take a look at some below:");
-                    Console.WriteLine(getResponse.count);
 
                     foreach (var pokemon in getResponse.results)
                     {
@@ -40,6 +39,8 @@ class Program
                     Console.WriteLine($"Name: {getResponse.name}");
                     Console.WriteLine($"Height: {getResponse.height}");
                     Console.WriteLine($"Weight: {getResponse.weight}");
+                    Console.WriteLine($"Base XP: {getResponse.base_experience}");
+                    Console.WriteLine($"Location: {getResponse.location_area_encounters}");
                 }
             }
         }
